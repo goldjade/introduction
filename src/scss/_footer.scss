@@ -1,0 +1,17 @@
+/** @format */
+
+.footer {
+  .inner {
+    height: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #222;
+    color: #fff;
+
+    copy {
+      font-size: 14px;
+    }
+  }
+}
