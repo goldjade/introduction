@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/goldjade/introduction/static/css/main.fdc0c6f5.css",
+    "main.js": "/goldjade/introduction/static/js/main.48dc6f63.js",
+    "index.html": "/goldjade/introduction/index.html",
+    "main.fdc0c6f5.css.map": "/goldjade/introduction/static/css/main.fdc0c6f5.css.map",
+    "main.48dc6f63.js.map": "/goldjade/introduction/static/js/main.48dc6f63.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.fdc0c6f5.css",
+    "static/js/main.48dc6f63.js"
+  ]
+}
