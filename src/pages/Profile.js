@@ -1,8 +1,10 @@
 /** @format */
 
-import React from 'react';
+import React from "react";
+import path from "./Visual";
 
 const Profile = () => {
+  const path = process.env.PUBLIC_URL;
   return (
     <section className="profile scroll">
       <div className="inner">
@@ -17,10 +19,10 @@ const Profile = () => {
           data-aos-delay="500"
         >
           <div className="profile-box">
-            <img src="/images/profile1.png" alt="profile" />
+            <img src={`${path}/images/profile1.png`} alt="profile" />
           </div>
           <div className="profile-box">
-            <img src="/images/profile2.png" alt="profile" />
+            <img src={`${path}/images/profile2.png`} alt="profile" />
           </div>
         </div>
       </div>

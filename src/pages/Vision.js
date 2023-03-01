@@ -11,22 +11,13 @@ const Vision = () => {
         <div className="contents">
           <ul className="vision-list">
             <li>
-              1년후 : Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-              Libero eligendi ipsum debitis numquam. Beatae dolores maxime quae
-              delectus aspernatur voluptatibus, dolorem aut, facilis vel
-              accusamus dolor sunt quisquam, minima ipsa!
+              1년후 : 취업성공한 응애 개발자
             </li>
             <li>
-              3년후 : Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-              Libero eligendi ipsum debitis numquam. Beatae dolores maxime quae
-              delectus aspernatur voluptatibus, dolorem aut, facilis vel
-              accusamus dolor sunt quisquam, minima ipsa!
+              3년후 : 풀스택 가즈아
             </li>
             <li>
-              5년후 : Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-              Libero eligendi ipsum debitis numquam. Beatae dolores maxime quae
-              delectus aspernatur voluptatibus, dolorem aut, facilis vel
-              accusamus dolor sunt quisquam, minima ipsa!
+              5년후 : AI에서 살아남은 휴먼 개발자
             </li>
           </ul>
         </div>
