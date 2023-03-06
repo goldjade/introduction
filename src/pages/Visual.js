@@ -15,7 +15,7 @@ const Visual = () => {
           <span className="greetings">
             안녕하세요 <br />
             세상 모든걸 구현하고 싶은 <br />
-            프론트앤드 개발자 최금옥 입니다.
+            프론트엔드개발자 최금옥 입니다.
           </span>
         </div>
       </div>
