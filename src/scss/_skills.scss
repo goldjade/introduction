@@ -16,6 +16,16 @@
           }
         }
       }
+      .skills-sub {
+        display: flex;
+        justify-content: space-between;
+        li {
+          img {
+            width: 100px;
+            height: 100px;
+          }
+        }
+      }
     }
   }
 }

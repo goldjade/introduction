@@ -6,13 +6,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 @font-face {
   font-family: 'ONE-Mobile-Title';
-  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/ONE-Mobile-Title.woff') format('woff');
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/ONE-Mobile-Title.woff')
+    format('woff');
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: 'ONE-Mobile-Regular';
-  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/ONE-Mobile-Regular.woff') format('woff');
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/ONE-Mobile-Regular.woff')
+    format('woff');
   font-weight: normal;
   font-style: normal;
 }
@@ -20,6 +22,12 @@
 $desktop: 1180px;
 $tablet: 960px;
 $mp: 860px;
+
+::selection {
+  background: #000;
+  color: #fff;
+}
+
 // 기본 scss
 @import 'reset';
 // 공콩 scss

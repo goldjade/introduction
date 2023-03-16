@@ -1,7 +1,6 @@
 /** @format */
 
-import React from "react";
-
+import React from 'react';
 
 const Skills = () => {
   const path = process.env.PUBLIC_URL;
@@ -48,6 +47,8 @@ const Skills = () => {
                 data-aos-delay="600"
               />
             </li>
+          </ul>
+          <ul className="skills-sub">
             <li>
               <img
                 src={`${path}/images/skill-git.png`}

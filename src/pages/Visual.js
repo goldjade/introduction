@@ -1,3 +1,5 @@
+/** @format */
+
 // import Anime from "../assets/Anime";
 
 const Visual = () => {
