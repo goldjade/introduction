@@ -4,7 +4,15 @@
   .inner {
     .contents {
       width: 100%;
-      display: grid;
+      display: flex;
+      .left {
+      }
+      .right {
+        .top {
+        }
+        .bottom {
+        }
+      }
     }
   }
 }
