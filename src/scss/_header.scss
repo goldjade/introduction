@@ -17,12 +17,16 @@
       justify-content: space-between;
       align-items: center;
       .header-log {
-        font-family: 'Poppins', sans-serif;
+        font-family: "Poppins", sans-serif;
         font-size: 22px;
         color: #131313;
         font-weight: 600;
         cursor: pointer;
         white-space: nowrap;
+        > img {
+          width: 30%;
+          height: 30%;
+        }
       }
       .gnb {
         display: flex;
@@ -34,14 +38,14 @@
           padding: 0 20px;
           span {
             position: relative;
-            font-family: 'Poppins', sans-serif;
+            font-family: "Poppins", sans-serif;
             font-size: 18px;
             color: #131313;
             text-transform: uppercase;
             font-weight: 600;
             transition: color 0.5s;
             &::after {
-              content: '';
+              content: "";
               position: absolute;
               left: 0;
               bottom: 0;

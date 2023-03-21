@@ -7,35 +7,35 @@
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
+
         li {
           width: 25%;
           text-align: center;
           margin-bottom: 20px;
+
           img {
-            width: 90%;
+            width: 60%;
           }
         }
       }
-      .skills-sub {
+      .skills-list-b {
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
         align-items: center;
-        padding-top: 100px;
+        padding-top: 80px;
         li {
           display: flex;
           justify-content: center;
           align-items: center;
           flex-direction: column;
           img {
-            width: 100px;
-            height: 100px;
+            width: 75px;
+            height: 75px;
           }
           > p {
             font-weight: 400;
             letter-spacing: 1px;
-            margin-top: 40px;
-            margin-bottom: 5px;
-
+            margin-top: 20px;
             font-size: 16px;
             text-align: center;
           }
@@ -43,49 +43,49 @@
             margin-top: 20px;
             background: #d9d9d9;
             width: 100%;
-            height: 3px;
+            height: 4px;
             border-radius: 5px;
             .ps {
               background: #31a8ff;
-              animation: ps 2s ease-in-out forwards;
+              animation: ps 3s ease-in-out forwards;
               > span {
                 background: #31a8ff;
               }
             }
             .ai {
               background: #ff9a00;
-              animation: ai 2s ease-in-out forwards;
+              animation: ai 3s ease-in-out forwards;
             }
             .pigma {
               background: #353535;
-              animation: pigma 2s ease-in-out forwards;
+              animation: pigma 3s ease-in-out forwards;
             }
             .tailwindcss {
               background: #16bcb8;
-              animation: tailwindcss 2s ease-in-out forwards;
+              animation: tailwindcss 3s ease-in-out forwards;
             }
             .sass {
               background: #ff62b1;
-              animation: sass 2s ease-in-out forwards;
+              animation: sass 3s ease-in-out forwards;
             }
             .git {
               background: #161614;
-              animation: git 2s ease-in-out forwards;
+              animation: git 3s ease-in-out forwards;
             }
             .jquery {
               background: #1266a9;
-              animation: jquery 2s ease-in-out forwards;
+              animation: jquery 3s ease-in-out forwards;
             }
             .typescript {
               background: #017acb;
-              animation: typescript 2s ease-in-out forwards;
+              animation: typescript 3s ease-in-out forwards;
             }
             .redux {
               background: #764abc;
-              animation: redux 2s ease-in-out forwards;
+              animation: redux 3s ease-in-out forwards;
             }
             > div {
-              height: 3px;
+              height: 4px;
               border: 5px;
               width: 0%;
               border-radius: 5px;
@@ -95,12 +95,6 @@
       }
     }
   }
-}
-
-.swiper-button-prev::after,
-.swiper-button-next::after {
-  margin-top: -100px;
-  color: #353535;
 }
 
 @keyframes ps {
