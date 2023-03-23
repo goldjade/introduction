@@ -1,14 +1,16 @@
 /** @format */
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBars, faXmark } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
 const Header = ({ setPage, setOpen, open }) => {
+
   return (
     <header className="header">
       <div className="inner">
         <nav className="nav">
           <span className="header-logo" onClick={() => setPage(0)}>
-            CHOI Profile
+  
+            CHOI_PROFILE
           </span>
           <ul className="gnb">
             <li onClick={() => setPage(0)}>

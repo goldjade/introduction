@@ -17,6 +17,8 @@ const Profile = () => {
           data-aos-delay="500"
         >
           <div className="left">
+            <span className="img" />
+
             <p>최금옥</p>
             <p>1991.08.31</p>
             <p>publisher & front-end</p>

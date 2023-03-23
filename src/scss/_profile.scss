@@ -6,6 +6,13 @@
       width: 100%;
       display: flex;
       .left {
+
+        .img {
+          display: block;
+          width: 213px;
+          height: 213px;
+          background: url("../../public/images/profile.png") no-repeat;
+        }
       }
       .right {
         .top {
