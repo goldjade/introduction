@@ -29,8 +29,8 @@
           align-items: center;
           flex-direction: column;
           img {
-            width: 75px;
-            height: 75px;
+            width: 100px;
+            height: 100px;
           }
           > p {
             font-weight: 400;
@@ -42,7 +42,7 @@
           .progress-bar {
             margin-top: 20px;
             background: #d9d9d9;
-            width: 100%;
+            width: 50%;
             height: 4px;
             border-radius: 5px;
             .ps {
@@ -68,12 +68,13 @@
               background: #ff62b1;
               animation: sass 3s ease-in-out forwards;
             }
+
             .git {
               background: #161614;
               animation: git 3s ease-in-out forwards;
             }
             .jquery {
-              background: #1266a9;
+              background: #e83418;
               animation: jquery 3s ease-in-out forwards;
             }
             .typescript {
@@ -82,6 +83,10 @@
             }
             .redux {
               background: #764abc;
+              animation: redux 3s ease-in-out forwards;
+            }
+            .blender {
+              background: #ff7020;
               animation: redux 3s ease-in-out forwards;
             }
             > div {
@@ -144,6 +149,14 @@
   }
 }
 
+.skill-slide {
+  .swiper-button-next,
+  .swiper-button-prev {
+    margin-top: -80px;
+    color: #bdbdbd !important;
+    display: none;
+  }
+}
 // 데스크탑
 @media screen and (max-width: $desktop) {
 }

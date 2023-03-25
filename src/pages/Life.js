@@ -1,9 +1,8 @@
 /** @format */
 
-import React from 'react';
+import React from "react";
 
-const Life = () => {
-  const path = process.env.PUBLIC_URL;
+const Life = ({ path }) => {
   return (
     <section className="life scroll">
       <div className="inner">

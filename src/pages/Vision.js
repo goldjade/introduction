@@ -2,7 +2,7 @@
 
 import React from 'react';
 
-const Vision = () => {
+const Vision = ({path}) => {
   return (
     <section className="vision scroll">
       <div className="inner">

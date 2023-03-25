@@ -13,15 +13,43 @@
           .portfolio-left {
             width: calc(60% - 10px);
             text-align: center;
-            a {
-              display: block;
-              video {
-                width: 90%;
-              }
+            video {
+              width: 90%;
             }
           }
           .portfolio-right {
             width: calc(40% - 10px);
+            .portfilio-team-list {
+              .title {
+                font-size: 40px;
+                font-weight: 700;
+              }
+              .period {
+                padding: 5px 0px;
+              }
+              .sub-title {
+                padding: 10px 0;
+                font-size: 18px;
+                font-weight: 500;
+              }
+
+              > li {
+                > a {
+                  > img {
+                    margin-right: 10px;
+                    width: 35px;
+                    height: 35px;
+                  }
+                }
+              }
+            }
+            .tool-img {
+              > img {
+                margin-right: 10px;
+                width: 35px;
+                height: 35px;
+              }
+            }
           }
         }
         .portfolio-slide {

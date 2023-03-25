@@ -8,8 +8,7 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 
-const Portfolio = () => {
-  const path = process.env.PUBLIC_URL;
+const Portfolio = ({ path }) => {
   return (
     <section className="portfolio scroll">
       <div className="inner">
@@ -22,93 +21,155 @@ const Portfolio = () => {
             <h3 data-aos="fade-up">Team Project</h3>
             <div className="portfolio-team burgerwang">
               <div className="portfolio-left">
-                <a
-                  href="https://github.com/goldjade/burgerwang.git"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  alt="portfolio"
-                >
-                  <video autoplay controls loop muted>
-                    <source src={`${path}/images/burgerwang.mp4`} />
-                  </video>
-                </a>
-                (이미지 클릭시 프로젝트 페이지로 이동합니다.)
+                <video autoplay controls loop muted autoPlay>
+                  <source src={`${path}/images/burgerwang.mp4`} />
+                </video>
               </div>
               <div className="portfolio-right">
                 <ul className="portfilio-team-list">
-                  <li>프로젝트명 :버거왕</li>
-                  <li>프로젝트 기간 :2023.01.11 - 2023. 02.06 </li>
-                  <li>프로젝트 주제 : 배달 서비스 </li>
+                  <li className="title">버거왕</li>
+                  <li className="period">2023 . 01 . 11 - 2023 . 02 . 06 </li>
+
+                  <li className="sub-title">구현 기능</li>
+                  <li>회원 가입 / 정보수정 / 회원 탈퇴 가능</li>
+                  <li>매장 위치 / 길찾기 </li>
                   <li>
-                    프로젝트 기여도 : 회원 (로그인/로그인 인증/회원 정보
-                    수정/아이디 찾기/비밀번호 찾기/회원 탈퇴/쿠폰)
+                    메뉴 / 장바구니 / 주문하기 / 주문내역 / 주소정보 /
+                    마이배달지
                   </li>
-                  <li>프로젝트 도구 : </li>
+                  <li className="sub-title">기여도</li>
                   <li>
-                    프로젝트 사용언어 : html css javaScript tailwind react redux
+                    회원기능 (로그인/로그인 인증/회원 정보 수정 / 회원 탈퇴)
                   </li>
-                  <li>프로젝트 피그마 : </li>
+                  <li className="sub-title">프로젝트 도구</li>
+                  <div className="tool-img">
+                    <img
+                      src={`${path}/images/skill/skill-html.svg`}
+                      alt="html"
+                    />
+                    <img
+                      src={`${path}/images/skill/skill-css.svg`}
+                      alt="html"
+                    />
+                    <img
+                      src={`${path}/images/skill/skill-tailwindcss.svg`}
+                      alt="html"
+                    />
+                    <img src={`${path}/images/skill/skill-js.svg`} alt="html" />
+                    <img
+                      src={`${path}/images/skill/skill-react.svg`}
+                      alt="html"
+                    />
+                    <img
+                      src={`${path}/images/skill/skill-redux.svg`}
+                      alt="html"
+                    />
+                  </div>
+                  <li className="sub-title"> 프로젝트 보러가기 </li>
                   <li>
-                    프로젝트 Git :
                     <a
                       href="https://github.com/goldjade/burgerwang.git"
                       target="_blank"
                       rel="noopener noreferrer"
                       alt="portfolio"
                     >
-                      깃허브 링크
+                      <img
+                        src={`${path}/images/skill/skill-git.svg`}
+                        alt="html"
+                      />
                     </a>
-                  </li>
-                  <li>프로젝트 노션 : </li>
-                </ul>
-              </div>
-            </div>
-            <div className="portfolio-team dietdiary">
-              <div className="portfolio-left">
-                <a
-                  href="https://github.com/goldjade/dietdiary.git"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  alt="portfolio"
-                >
-                  <video autoplay controls loop muted>
-                    <source src={`${path}/images/diet.mp4`} />
-                  </video>
-                </a>
-                (이미지 클릭시 프로젝트 페이지로 이동합니다.)
-              </div>
-              <div className="portfolio-right">
-                <ul className="portfilio-team-list">
-                  <li>프로젝트명 :dietdiary </li>
-                  <li>프로젝트 기간 :2023.02.07 - 2023. 03. 06 </li>
-                  <li>
-                    프로젝트 주제 : 현대인의 대부분은 건강을 챙기지 못하면서
-                    살아감. 건강하지 못한 사람도, 건강한 사람도 식단 관리 /
-                    운동을 할 수 있다는 생각에서 나온 기획. 질병 관리(약 복용)와
-                    운동을 함께 병행 할 수 있음.
-                  </li>
-                  <li>
-                    프로젝트 기여도 : 식단 페이지 오늘의 식단 출력 추천 식단
-                    식단 달성도 여부 달력 관련 UI 작업 전체{" "}
-                  </li>
-                  <li>프로젝트 도구 : </li>
-                  <li>프로젝트 사용언어 : </li>
-                  <li>
-                    프로젝트 피그마 :{" "}
-                    <a href="https://www.figma.com/file/W8oVNeFTNm7SAsIfPOtgGI/2%EC%B0%A8-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8?node-id=0-1&t=P8EEe8q4LEkx2Tgh-0"></a>{" "}
-                  </li>
-                  <li>
-                    프로젝트 Git :{" "}
                     <a
-                      href="https://github.com/goldjade/dietdiary.git"
+                      href="https://www.figma.com/file/S1cnkoI5L2jX64EYB6l0lZ/burgerwang?node-id=0-1&t=wSRZLRmBW5kEAiyx-0"
                       target="_blank"
                       rel="noopener noreferrer"
                       alt="portfolio"
                     >
-                      작업물보기
+                      <img
+                        src={`${path}/images/skill/skill-figma.svg`}
+                        alt="html"
+                      />
                     </a>
                   </li>
-                  <li>프로젝트 노션 : </li>
+                </ul>
+              </div>
+            </div>
+
+            <div className="portfolio-team dietdiary">
+              <div className="portfolio-left">
+                <video autoplay controls loop muted autoPlay>
+                  <source src={`${path}/images/diet.mp4`} />
+                </video>
+              </div>
+              <div className="portfolio-right">
+                <ul className="portfilio-team-list">
+                  <li className="title">나의 식단일지</li>
+                  <li className="period">2023 . 02 . 08 - 2023 . 03 . 03 </li>
+
+                  <li className="sub-title">구현 기능</li>
+                  <li>회원 가입 / 정보수정 / 회원 탈퇴 가능</li>
+                  <li>
+                    샘플 식단 등록 / 직접 식단 등록 / 식단 수정 / 식단 삭제{" "}
+                  </li>
+                  <li>
+                    목표 칼로리 달성여부 / 이전 식단 확인 섭취 약물 등록 / 수정
+                    / 삭제
+                  </li>
+
+                  <li className="sub-title">기여도</li>
+                  <li>
+                    디자인 / 식단기능 (식단 등록/수정/삭제 / 칼로리계산 / 목표달성 여부
+                    확인)
+                  </li>
+                  <li className="sub-title">프로젝트 도구</li>
+                  <div className="tool-img">
+                    <img
+                      src={`${path}/images/skill/skill-html.svg`}
+                      alt="html"
+                    />
+                    <img
+                      src={`${path}/images/skill/skill-css.svg`}
+                      alt="html"
+                    />
+                    <img
+                      src={`${path}/images/skill/skill-tailwindcss.svg`}
+                      alt="html"
+                    />
+                    <img src={`${path}/images/skill/skill-js.svg`} alt="html" />
+                    <img
+                      src={`${path}/images/skill/skill-react.svg`}
+                      alt="html"
+                    />
+                    <img
+                      src={`${path}/images/skill/skill-redux.svg`}
+                      alt="html"
+                    />
+                  </div>
+                  <li className="sub-title"> 프로젝트 보러가기 </li>
+                  
+                  <li>
+                    <a
+                      href="https://github.com/goldjade/burgerwang.git"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      alt="portfolio"
+                    >
+                      <img
+                        src={`${path}/images/skill/skill-git.svg`}
+                        alt="html"
+                      />
+                    </a>
+                    <a
+                      href="https://www.figma.com/file/W8oVNeFTNm7SAsIfPOtgGI/2%EC%B0%A8-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8?node-id=0-1&t=D1GaooW4bZsewGKy-0"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      alt="portfolio"
+                    >
+                      <img
+                        src={`${path}/images/skill/skill-figma.svg`}
+                        alt="html"
+                      />
+                    </a>
+                  </li>
                 </ul>
               </div>
             </div>

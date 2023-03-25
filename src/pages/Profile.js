@@ -2,7 +2,7 @@
 
 import React from "react";
 
-const Profile = () => {
+const Profile = ({path}) => {
   return (
     <section className="profile scroll">
       <div className="inner">

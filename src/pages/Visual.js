@@ -2,13 +2,11 @@
 
 // import Anime from "../assets/Anime";
 
-const Visual = () => {
-  const path = process.env.PUBLIC_URL;
-
+const Visual = ({ path }) => {
   return (
     <div className="visual scroll">
       <div className="inner">
-        <div className="introduction">
+        <div className="introduction" data-aos="fade-up">
           <span className="title">I CREATE WORLD</span>
           <span className="sub-title">FRONTEND DEVELOPER</span>
 
