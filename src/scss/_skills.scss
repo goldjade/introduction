@@ -85,9 +85,9 @@
               background: #764abc;
               animation: redux 3s ease-in-out forwards;
             }
-            .blender {
-              background: #ff7020;
-              animation: redux 3s ease-in-out forwards;
+            .postman {
+              background: #ff6c37;
+              animation: postman 3s ease-in-out forwards;
             }
             > div {
               height: 4px;
@@ -134,16 +134,21 @@
 }
 @keyframes jquery {
   100% {
-    width: 55%;
+    width: 65%;
   }
 }
 @keyframes typescript {
   100% {
-    width: 40%;
+    width: 60%;
   }
 }
 
 @keyframes redux {
+  100% {
+    width: 50%;
+  }
+}
+@keyframes postman {
   100% {
     width: 40%;
   }

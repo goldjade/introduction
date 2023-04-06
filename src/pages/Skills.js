@@ -16,48 +16,41 @@ const Skills = ({ path }) => {
         <h2>Skills</h2>
         <div className="contents">
           <ul className="skills-list">
-            <li>
+            <li data-aos="fade-up" data-aos-duration="300" data-aos-delay="300">
               <img
                 className="html"
                 src={`${path}/images/skill/skill-html.svg`}
                 alt="skill"
-                data-aos="fade-up"
-                data-aos-duration="300"
-                data-aos-delay="300"
               />
             </li>
-            <li>
+            <li data-aos="fade-up" data-aos-duration="300" data-aos-delay="400">
               <img
                 className="css"
                 src={`${path}/images/skill/skill-css.svg`}
                 alt="skill"
-                data-aos="fade-up"
-                data-aos-duration="300"
-                data-aos-delay="400"
               />
             </li>
-            <li>
+            <li data-aos="fade-up" data-aos-duration="300" data-aos-delay="500">
               <img
                 className="js"
                 src={`${path}/images/skill/skill-js.svg`}
                 alt="skill"
-                data-aos="fade-up"
-                data-aos-duration="300"
-                data-aos-delay="500"
               />
             </li>
-            <li>
+            <li data-aos="fade-up" data-aos-duration="300" data-aos-delay="600">
               <img
                 className="react"
                 src={`${path}/images/skill/skill-react.svg`}
                 alt="skill"
-                data-aos="fade-up"
-                data-aos-duration="300"
-                data-aos-delay="600"
               />
             </li>
           </ul>
-          <ul className="skills-list-b">
+          <ul
+            className="skills-list-b"
+            data-aos="fade-up"
+            data-aos-duration="300"
+            data-aos-delay="600"
+          >
             <Swiper
               style={{ height: 250 }}
               loop={true}
@@ -220,6 +213,7 @@ const Skills = ({ path }) => {
                   </div>
                 </li>
               </SwiperSlide>
+
               <SwiperSlide>
                 <li
                   data-aos="fade-up"
@@ -227,12 +221,12 @@ const Skills = ({ path }) => {
                   data-aos-delay="1500"
                 >
                   <img
-                    src={`${path}/images/skill/skill-Blender.svg`}
+                    src={`${path}/images/skill/skill-postman.svg`}
                     alt="skill"
                   />
-                  <p>Blender</p>
+                  <p>Postman</p>
                   <div className="progress-bar">
-                    <div className="blender"></div>
+                    <div className="postman"></div>
                   </div>
                 </li>
               </SwiperSlide>
