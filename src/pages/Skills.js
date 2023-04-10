@@ -13,7 +13,7 @@ const Skills = ({ path }) => {
     <section className="skills scroll">
       <div className="inner">
         {/* 기술적 역량: 기술적 내용설명,자격증,운전면허 등..  */}
-        <h2>Skills</h2>
+        <h2>SKILLS</h2>
         <div className="contents">
           <ul className="skills-list">
             <li data-aos="fade-up" data-aos-duration="300" data-aos-delay="300">

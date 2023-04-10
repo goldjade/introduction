@@ -1,29 +1,48 @@
 /** @format */
 
 .profile {
+  background: #fff;
   .inner {
+    height: 100vh;
     .contents {
       width: 100%;
       display: flex;
-      .left {
-
-        .img {
-          display: block;
-          width: 213px;
-          height: 213px;
-          background: url("../../public/images/profile.png") no-repeat;
+      justify-content: space-between;
+      align-items: start;
+      border-top: #d3d3d3 1px solid;
+      border-bottom: #d3d3d3 1px solid;
+      padding: 100px 50px;
+      .img {
+        width: 215px;
+        height: 215px;
+        background: url("../../public/images/profile.png") no-repeat center;
+      }
+      .a-profile {
+        .about-name {
+          font-size: 20px;
         }
       }
-      .right {
-        .top {
-        }
-        .bottom {
-        }
+      .a-education {
+      }
+      .a-experince {
       }
     }
   }
 }
-
+.about-card {
+  display: flex;
+  flex-direction: column;
+}
+.about-title {
+  color: #222;
+  font-size: 35px;
+  margin-bottom: 15px;
+}
+.about-period {
+  color: #444;
+  font-size: 20px;
+  margin-bottom: 5px;
+}
 // 데스크탑
 @media screen and (max-width: $desktop) {
 }
