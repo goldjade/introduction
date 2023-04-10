@@ -1,7 +1,9 @@
-/** @format */
-
 import React from "react";
-
+import { BsPersonFill } from "react-icons/bs";
+import { TiHeartFullOutline } from "react-icons/ti";
+import { HiCake } from "react-icons/hi";
+import { RiGitBranchFill } from "react-icons/ri";
+import { MdEmail } from "react-icons/md";
 const Profile = ({ path }) => {
   return (
     <section className="profile scroll">
@@ -14,17 +16,32 @@ const Profile = ({ path }) => {
           className="contents"
           data-aos="fade-up"
           data-aos-duration="1000"
-          data-aos-delay="500"
+          data-aos-delay="600"
         >
           <span className="img" />
+
           <div className="a-profile about-card">
             <span className="about-title">Profile</span>
-            <span className="about-name">최금옥</span>
-
-            <span>INFP</span>
-            <span>1991.08.31</span>
-            <span>publisher & front-end</span>
-            <span>bcaca0831@gmail.com</span>
+            <span className="about-name">
+              <BsPersonFill className="a-icon" />
+              최금옥
+            </span>
+            <span>
+              <TiHeartFullOutline className="a-icon" />
+              INFP
+            </span>
+            <span>
+              <HiCake className="a-icon" />
+              1991.08.31
+            </span>
+            <span>
+              <RiGitBranchFill className="a-icon" />
+              publisher & front-end
+            </span>
+            <span>
+              <MdEmail className="a-icon" />
+              bcaca0831@gmail.com
+            </span>
           </div>
           <div className="a-education about-card">
             <span className="about-title">Education</span>
@@ -43,6 +60,17 @@ const Profile = ({ path }) => {
             <span className="about-period"> 201901 202203</span>
             <span>주식회사 베스트(Best)</span>
           </div>
+        </div>
+        <div className="contact">
+          <a
+            href="#"
+            download
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-delay="700"
+          >
+            이력서받기
+          </a>
         </div>
       </div>
     </section>
