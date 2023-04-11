@@ -4,96 +4,105 @@
   .inner {
     .contents {
       .skills-list {
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
+        display: grid;
+        grid-template-columns: repeat(
+          2,
+          1fr
+        ); /* 2개의 컬럼을 1:1 비율로 설정 */
+        grid-gap: 0 50px; /* 칼럼 사이의 간격을 50px로 설정 */
 
-        li {
-          width: 25%;
-          text-align: center;
-          margin-bottom: 20px;
-
-          img {
-            width: 60%;
-          }
-        }
-      }
-      .skills-list-b {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        padding-top: 80px;
-        li {
+        > li {
+          position: relative;
           display: flex;
-          justify-content: center;
-          align-items: center;
-          flex-direction: column;
+          width: 100%;
+          gap: 20px;
+          padding: 10px;
           img {
-            width: 100px;
-            height: 100px;
+            width: 85px;
+            height: 85px;
           }
-          > p {
-            font-weight: 400;
-            letter-spacing: 1px;
-            margin-top: 20px;
-            font-size: 16px;
-            text-align: center;
-          }
-          .progress-bar {
-            margin-top: 20px;
-            background: #d9d9d9;
-            width: 50%;
-            height: 4px;
-            border-radius: 5px;
-            .ps {
-              background: #31a8ff;
-              animation: ps 3s ease-in-out forwards;
-              > span {
-                background: #31a8ff;
-              }
-            }
-            .ai {
-              background: #ff9a00;
-              animation: ai 3s ease-in-out forwards;
-            }
-            .pigma {
-              background: #353535;
-              animation: pigma 3s ease-in-out forwards;
-            }
-            .tailwindcss {
-              background: #16bcb8;
-              animation: tailwindcss 3s ease-in-out forwards;
-            }
-            .sass {
-              background: #ff62b1;
-              animation: sass 3s ease-in-out forwards;
-            }
+          .s-r {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
 
-            .git {
-              background: #161614;
-              animation: git 3s ease-in-out forwards;
+            .skill-name {
+              color: #222;
+              font-size: 20px;
             }
-            .jquery {
-              background: #e83418;
-              animation: jquery 3s ease-in-out forwards;
+            > span {
+              padding-left: 5px;
+              color: #444;
             }
-            .typescript {
-              background: #017acb;
-              animation: typescript 3s ease-in-out forwards;
-            }
-            .redux {
-              background: #764abc;
-              animation: redux 3s ease-in-out forwards;
-            }
-            .postman {
-              background: #ff6c37;
-              animation: postman 3s ease-in-out forwards;
-            }
-            > div {
-              height: 4px;
-              border: 5px;
-              width: 0%;
-              border-radius: 5px;
+            .progress-bar {
+              margin-top: 5px;
+              background: #d9d9d9;
+              width: 100%;
+              height: 20px;
+              border-radius: 10px;
+              > div {
+                width: 100%;
+                height: 20px;
+                border-radius: 10px;
+              }
+              .html {
+                background: #e14e1d;
+                animation: html 3s ease-in-out forwards;
+              }
+              .css {
+                background: #0277bd;
+                animation: css 3s ease-in-out forwards;
+              }
+              .js {
+                background: #f0db4f;
+                animation: js 3s ease-in-out forwards;
+              }
+              .react {
+                background: #242938;
+                animation: react 3s ease-in-out forwards;
+              }
+              .ps {
+                background: #31a8ff;
+                animation: ps 3s ease-in-out forwards;
+              }
+              .ai {
+                background: #ff9a00;
+                animation: ai 3s ease-in-out forwards;
+              }
+              .pigma {
+                background: #353535;
+                animation: pigma 3s ease-in-out forwards;
+              }
+              .tailwindcss {
+                background: #16bcb8;
+                animation: tailwindcss 3s ease-in-out forwards;
+              }
+              .sass {
+                background: #ff62b1;
+                animation: sass 3s ease-in-out forwards;
+              }
+
+              .git {
+                background: #161614;
+                animation: git 3s ease-in-out forwards;
+              }
+              .jquery {
+                background: #e83418;
+                animation: jquery 3s ease-in-out forwards;
+              }
+              .typescript {
+                background: #017acb;
+                animation: typescript 3s ease-in-out forwards;
+              }
+              .redux {
+                background: #764abc;
+                animation: redux 3s ease-in-out forwards;
+              }
+              .postman {
+                background: #ff6c37;
+                animation: postman 3s ease-in-out forwards;
+              }
             }
           }
         }
@@ -101,7 +110,26 @@
     }
   }
 }
-
+@keyframes html {
+  100% {
+    width: 95%;
+  }
+}
+@keyframes css {
+  100% {
+    width: 90%;
+  }
+}
+@keyframes js {
+  100% {
+    width: 80%;
+  }
+}
+@keyframes react {
+  100% {
+    width: 80%;
+  }
+}
 @keyframes ps {
   100% {
     width: 90%;

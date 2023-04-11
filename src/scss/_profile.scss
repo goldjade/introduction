@@ -2,10 +2,10 @@
 
 .profile {
   position: relative;
-    height: 100vh;
-    background: #fff;
-    display: flex;
-    align-items: center;
+  height: 100vh;
+  background: #fff;
+  // display: flex;
+  // align-items: center;
   .inner {
     width: 100%;
     .contents {
@@ -33,43 +33,43 @@
           line-height: 35px;
           margin-bottom: 20px;
         }
-        
-      .about-period {
-        color: #444;
-        font-size: 20px;
-      
-        margin-bottom: 5px;
+
+        .about-period {
+          color: #444;
+          font-size: 20px;
+
+          margin-bottom: 5px;
+        }
       }
-      }
-    
     }
-    .contact {  
+    .contact {
       display: block;
       text-align: right;
-      .c-icon{
-        color: #444;
-        display: inline-block;
-        font-size: 30px;
-        margin: 10px 5px;
+      a {
+        .c-icon {
+          color: #444;
+          display: inline-block;
+          font-size: 30px;
+          line-height: 35px;
+          margin: 10px 5px;
+        }
+        .c-icon:hover {
+          color: #a08e82;
+        }
       }
-       
-    
     }
   }
 }
-
 
 .a-icon {
   font-size: 16px;
   line-height: 20px;
   margin-right: 5px;
-
-
 }
-.a-mb{
+.a-mb {
   margin-bottom: 15px;
 }
-.bar{
+.bar {
   position: relative;
   display: block;
   width: 1px;
