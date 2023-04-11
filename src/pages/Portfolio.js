@@ -21,7 +21,7 @@ const Portfolio = ({ path }) => {
             <h3 data-aos="fade-up">Team Project</h3>
             <div className="portfolio-team burgerwang">
               <div className="portfolio-left">
-                <video autoplay controls loop muted autoPlay>
+                <video controls loop muted autoPlay>
                   <source src={`${path}/images/burgerwang.mp4`} />
                 </video>
               </div>
@@ -96,7 +96,7 @@ const Portfolio = ({ path }) => {
 
             <div className="portfolio-team dietdiary">
               <div className="portfolio-left">
-                <video autoplay controls loop muted autoPlay>
+                <video controls loop muted autoPlay>
                   <source src={`${path}/images/diet.mp4`} />
                 </video>
               </div>
