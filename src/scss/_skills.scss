@@ -3,6 +3,9 @@
 .skills {
   .inner {
     .contents {
+      width: 100%;
+      height: 100%;
+      padding-bottom: 50px;
       .skills-list {
         display: grid;
         grid-template-columns: repeat(
@@ -10,16 +13,17 @@
           1fr
         ); /* 2개의 컬럼을 1:1 비율로 설정 */
         grid-gap: 0 50px; /* 칼럼 사이의 간격을 50px로 설정 */
-
+        padding: 50px;
         > li {
           position: relative;
           display: flex;
           width: 100%;
           gap: 20px;
-          padding: 10px;
+          padding: 25px;
+
           img {
-            width: 85px;
-            height: 85px;
+            width: 80px;
+            height: 80px;
           }
           .s-r {
             width: 100%;
@@ -32,6 +36,7 @@
               font-size: 20px;
             }
             > span {
+              font-size: 14px;
               padding-left: 5px;
               color: #444;
             }
@@ -39,11 +44,11 @@
               margin-top: 5px;
               background: #d9d9d9;
               width: 100%;
-              height: 20px;
+              height: 10px;
               border-radius: 10px;
               > div {
                 width: 100%;
-                height: 20px;
+                height: 10px;
                 border-radius: 10px;
               }
               .html {
@@ -111,72 +116,114 @@
   }
 }
 @keyframes html {
+  0% {
+    width: 0%;
+  }
   100% {
     width: 95%;
   }
 }
 @keyframes css {
+  0% {
+    width: 0%;
+  }
   100% {
     width: 90%;
   }
 }
 @keyframes js {
+  0% {
+    width: 0%;
+  }
   100% {
     width: 80%;
   }
 }
 @keyframes react {
+  0% {
+    width: 0%;
+  }
   100% {
     width: 80%;
   }
 }
 @keyframes ps {
+  0% {
+    width: 0%;
+  }
   100% {
     width: 90%;
   }
 }
 @keyframes ai {
+  0% {
+    width: 0%;
+  }
   100% {
     width: 85%;
   }
 }
 @keyframes pigma {
+  0% {
+    width: 0%;
+  }
   100% {
     width: 75%;
   }
 }
 @keyframes tailwindcss {
+  0% {
+    width: 0%;
+  }
   100% {
     width: 75%;
   }
 }
 @keyframes sass {
+  0% {
+    width: 0%;
+  }
   100% {
     width: 75%;
   }
 }
 @keyframes git {
+  0% {
+    width: 0%;
+  }
   100% {
     width: 65%;
   }
 }
 @keyframes jquery {
+  0% {
+    width: 0%;
+  }
   100% {
     width: 65%;
   }
 }
 @keyframes typescript {
+  0% {
+    width: 0%;
+  }
   100% {
     width: 60%;
   }
 }
 
 @keyframes redux {
+  0% {
+    width: 0%;
+  }
   100% {
     width: 50%;
   }
 }
 @keyframes postman {
+  0% {
+    width: 0%;
+  }
   100% {
     width: 40%;
   }
