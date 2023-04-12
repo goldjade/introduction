@@ -106,6 +106,13 @@
   }
 }
 
+.Team {
+  .swiper-button-prev::after,
+  .swiper-button-next::after {
+    margin-top: -500px;
+    color: aqua;
+  }
+}
 // 데스크탑
 @media screen and (max-width: $desktop) {
 }

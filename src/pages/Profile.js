@@ -11,7 +11,7 @@ const Profile = ({ path }) => {
 
   const handleMouseMove = (event) => {
     const tooltip = tooltipRef.current;
-    tooltip.style.top = 60 + "px"; // 마우스 Y 좌표에 10px 추가
+    tooltip.style.top = event.clientY  -480 + "px"; // 마우스 Y 좌표에 10px 추가
     tooltip.style.right = -35 + "px"; // 마우스 X 좌표에서 20px 뺌
   };
 
