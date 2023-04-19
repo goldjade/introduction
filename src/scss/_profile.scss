@@ -1,73 +1,100 @@
 /** @format */
 
 .profile {
-  position: relative;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
   background: #fff;
   // display: flex;
   // align-items: center;
   .inner {
-    width: 100%;
     .contents {
-      width: 100%;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
       border-top: #d3d3d3 1px solid;
       border-bottom: #d3d3d3 1px solid;
-      padding: 100px 50px;
-      .img {
-        width: 215px;
-        height: 215px;
-        background: url("../../public/images/profile.png") no-repeat center;
+      padding: 80px 30px;
+      display: flex;
+      justify-content: space-between;
+      .profile-img {
+        position: relative;
+        display: block;
+        width: 200px;
+        height: 200px;
+        background: url(../../public//images//profile.png) no-repeat;
+        background-position: center;
+        background-size: cover;
+        font-size: 0;
       }
-      .about-card {
+      .profile-list {
+        width: calc(100% - 215px);
         display: flex;
-        flex-direction: column;
         justify-content: space-between;
-        line-height: 25px;
-        padding: 20px;
-        .about-title {
-          color: #222;
-          font-size: 35px;
-          line-height: 35px;
-          margin-bottom: 20px;
-        }
-
-        .about-period {
-          color: #444;
-          font-size: 20px;
-
-          margin-bottom: 5px;
+        .list-card {
+          display: flex;
+          flex-direction: column;
+          padding: 0px 30px;
+          .list-title {
+            color: #222;
+            font-size: 35px;
+            line-height: 35px;
+            margin-bottom: 20px;
+          }
+          .a-icon {
+            font-size: 16px;
+            line-height: 16px;
+            margin-right: 5px;
+            vertical-align: middle;
+            transform: translateY(-11%);
+          }
+          .list-period {
+            color: #444;
+            font-size: 20px;
+          }
         }
       }
     }
     .contact {
-      display: block;
       text-align: right;
-      a {
+
+      > a {
+        position: relative;
+        display: inline-block;
         .c-icon {
           color: #444;
-          display: inline-block;
-          font-size: 30px;
+
+          font-size: 40px;
+          line-height: 40px;
+          margin: 20px 10px;
+          transition: all 0.2s ease-in-out;
+        }
+        .tooltip {
+          position: absolute;
+          display: block;
+          visibility: hidden;
+          bottom: -20px;
+          left: 50%;
+          opacity: 0;
+          transition: all 0.2s ease-in-out;
+          transform: translate(-50%);
+          color: #fff;
+          font-size: 14px;
           line-height: 35px;
-          margin: 10px 5px;
+          width: 80px;
+          height: 35px;
+          text-align: center;
+          border-radius: 10px;
+          background: rgba(0, 0, 0, 0.5);
+          z-index: 9;
         }
-        .c-icon:hover {
-          color: #a08e82;
-        }
+      }
+      > a:hover .c-icon {
+        opacity: 1;
+        color: #a08e82;
+      }
+      > a:hover .tooltip {
+        visibility: visible;
+        opacity: 1;
       }
     }
   }
-}
-
-.a-icon {
-  font-size: 16px;
-  line-height: 20px;
-  margin-right: 5px;
-}
-.a-mb {
-  margin-bottom: 15px;
 }
 .bar {
   position: relative;
@@ -76,21 +103,8 @@
   height: 180px;
   background: #ececec;
 }
-.download-tooltip {
-  position: absolute;
-  background-color: #444;
-  color: #fff;
-  padding: 4px 8px;
-  font-size: 14px;
-  border-radius: 4px;
-  opacity: 0;
-  transition: opacity 0.3s ease-in-out;
-  pointer-events: none; /* 마우스 이벤트를 허용하지 않음 */
-  z-index: 999; /* 다른 요소 위에 표시되도록 설정 */
-}
-
-a:hover .download-tooltip {
-  opacity: 0.5;
+.a-mb {
+  margin-bottom: 15px;
 }
 // 데스크탑
 @media screen and (max-width: $desktop) {
@@ -107,3 +121,84 @@ a:hover .download-tooltip {
     }
   }
 }
+
+//  width: 100%;
+//       display: flex;
+//       justify-content: space-between;
+//       align-items: center;
+//       border-top: #d3d3d3 1px solid;
+//       border-bottom: #d3d3d3 1px solid;
+//       padding: 100px 50px;
+//       .img {
+//         width: 215px;
+//         height: 215px;
+//         background: url("../../public/images/profile.png") no-repeat center;
+//       }
+//       .about-card {
+//         display: flex;
+//         flex-direction: column;
+//         justify-content: space-between;
+//         line-height: 25px;
+//         padding: 20px;
+//         .about-title {
+//           color: #222;
+//           font-size: 35px;
+//           line-height: 35px;
+//           margin-bottom: 20px;
+//         }
+
+//         .about-period {
+//           color: #444;
+//           font-size: 20px;
+
+//           margin-bottom: 5px;
+//         }
+//       }
+// .contact {
+//   display: block;
+//   text-align: right;
+//   a {
+//     .c-icon {
+//       color: #444;
+//       display: inline-block;
+//       font-size: 30px;
+//       line-height: 35px;
+//       margin: 10px 5px;
+//     }
+//     .c-icon:hover {
+//       color: #a08e82;
+//     }
+//   }
+// }
+// }
+// .a-icon {
+//   font-size: 16px;
+//   line-height: 20px;
+//   margin-right: 5px;
+// }
+// .a-mb {
+//   margin-bottom: 15px;
+// }
+// .bar {
+//   position: relative;
+//   display: block;
+//   width: 1px;
+//   height: 180px;
+//   background: #ececec;
+// }
+// .download-tooltip {
+//   position: absolute;
+//   background-color: #444;
+//   color: #fff;
+//   padding: 4px 8px;
+//   font-size: 14px;
+//   border-radius: 4px;
+//   opacity: 0;
+//   transition: opacity 0.3s ease-in-out;
+//   pointer-events: none; /* 마우스 이벤트를 허용하지 않음 */
+//   z-index: 999; /* 다른 요소 위에 표시되도록 설정 */
+// }
+
+// a:hover .download-tooltip {
+//   opacity: 0.5;
+// }
