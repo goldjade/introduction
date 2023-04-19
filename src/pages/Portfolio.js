@@ -18,7 +18,6 @@ const Portfolio = ({ path }) => {
         </h2>
         <div className="contents">
           {/* 팀프로젝트 */}
-
           <div className="portfolio-box Team">
             <h3
               data-aos="fade-up"
@@ -70,32 +69,38 @@ const Portfolio = ({ path }) => {
                       <li className="sub-title">프로젝트 도구</li>
                       <div className="tool-img">
                         <img
+                          className="p-img"
                           src={`${path}/images/skill/skill-html.svg`}
                           alt="html"
                         />
                         <img
+                          className="p-img"
                           src={`${path}/images/skill/skill-css.svg`}
-                          alt="html"
+                          alt="css"
                         />
                         <img
+                          className="p-img"
                           src={`${path}/images/skill/skill-tailwindcss.svg`}
-                          alt="html"
+                          alt="tailwindcss"
                         />
                         <img
+                          className="p-img"
                           src={`${path}/images/skill/skill-js.svg`}
-                          alt="html"
+                          alt="js"
                         />
                         <img
+                          className="p-img"
                           src={`${path}/images/skill/skill-react.svg`}
-                          alt="html"
+                          alt="react"
                         />
                         <img
+                          className="p-img"
                           src={`${path}/images/skill/skill-redux.svg`}
-                          alt="html"
+                          alt="redux"
                         />
                       </div>
                       <li className="sub-title"> 프로젝트 보러가기 </li>
-                      <li>
+                      <div className="tool-img">
                         <a
                           href="https://github.com/goldjade/burgerwang.git"
                           target="_blank"
@@ -103,6 +108,7 @@ const Portfolio = ({ path }) => {
                           alt="portfolio"
                         >
                           <img
+                            className="p-img"
                             src={`${path}/images/skill/skill-git.svg`}
                             alt="html"
                           />
@@ -114,11 +120,12 @@ const Portfolio = ({ path }) => {
                           alt="portfolio"
                         >
                           <img
+                            className="p-img"
                             src={`${path}/images/skill/skill-figma.svg`}
                             alt="html"
                           />
                         </a>
-                      </li>
+                      </div>
                     </ul>
                   </div>
                 </div>
@@ -126,9 +133,6 @@ const Portfolio = ({ path }) => {
               <SwiperSlide>
                 <div className="portfolio-team dietdiary">
                   <div className="portfolio-v">
-                    <div className="neyong">
-                      <p>내용이지롱</p>
-                    </div>
                     <video controls loop muted autoPlay>
                       <source src={`${path}/images/diet.mp4`} />
                     </video>
@@ -158,33 +162,39 @@ const Portfolio = ({ path }) => {
                       <li className="sub-title">프로젝트 도구</li>
                       <div className="tool-img">
                         <img
+                          className="p-img"
                           src={`${path}/images/skill/skill-html.svg`}
                           alt="html"
                         />
                         <img
+                          className="p-img"
                           src={`${path}/images/skill/skill-css.svg`}
                           alt="html"
                         />
                         <img
+                          className="p-img"
                           src={`${path}/images/skill/skill-tailwindcss.svg`}
                           alt="html"
                         />
                         <img
+                          className="p-img"
                           src={`${path}/images/skill/skill-js.svg`}
                           alt="html"
                         />
                         <img
+                          className="p-img"
                           src={`${path}/images/skill/skill-react.svg`}
                           alt="html"
                         />
                         <img
+                          className="p-img"
                           src={`${path}/images/skill/skill-redux.svg`}
                           alt="html"
                         />
                       </div>
                       <li className="sub-title"> 프로젝트 보러가기 </li>
 
-                      <li>
+                      <div className="tool-img">
                         <a
                           href="https://github.com/goldjade/burgerwang.git"
                           target="_blank"
@@ -192,6 +202,7 @@ const Portfolio = ({ path }) => {
                           alt="portfolio"
                         >
                           <img
+                            className="p-img"
                             src={`${path}/images/skill/skill-git.svg`}
                             alt="html"
                           />
@@ -203,11 +214,12 @@ const Portfolio = ({ path }) => {
                           alt="portfolio"
                         >
                           <img
+                            className="p-img"
                             src={`${path}/images/skill/skill-figma.svg`}
                             alt="html"
                           />
                         </a>
-                      </li>
+                      </div>
                     </ul>
                   </div>
                 </div>
@@ -244,37 +256,44 @@ const Portfolio = ({ path }) => {
                       <li className="sub-title">프로젝트 도구</li>
                       <div className="tool-img">
                         <img
+                          className="p-img"
                           src={`${path}/images/skill/skill-html.svg`}
                           alt="html"
                         />
                         <img
+                          className="p-img"
                           src={`${path}/images/skill/skill-css.svg`}
                           alt="html"
                         />
                         <img
+                          className="p-img"
                           src={`${path}/images/skill/skill-tailwindcss.svg`}
                           alt="html"
                         />
                         <img
+                          className="p-img"
                           src={`${path}/images/skill/skill-js.svg`}
                           alt="html"
                         />
                         <img
+                          className="p-img"
                           src={`${path}/images/skill/skill-react.svg`}
                           alt="html"
                         />
                         <img
+                          className="p-img"
                           src={`${path}/images/skill/skill-redux.svg`}
                           alt="html"
                         />
                         <img
+                          className="p-img"
                           src={`${path}/images/skill/skill-type.svg`}
                           alt="html"
                         />
                       </div>
                       <li className="sub-title"> 프로젝트 보러가기 </li>
 
-                      <li>
+                      <div className="tool-img">
                         <a
                           href="https://github.com/goldjade/MathEdu"
                           target="_blank"
@@ -282,6 +301,7 @@ const Portfolio = ({ path }) => {
                           alt="portfolio"
                         >
                           <img
+                            className="p-img"
                             src={`${path}/images/skill/skill-git.svg`}
                             alt="html"
                           />
@@ -293,11 +313,12 @@ const Portfolio = ({ path }) => {
                           alt="portfolio"
                         >
                           <img
+                            className="p-img"
                             src={`${path}/images/skill/skill-figma.svg`}
                             alt="html"
                           />
                         </a>
-                      </li>
+                      </div>
                     </ul>
                   </div>
                 </div>
@@ -305,7 +326,7 @@ const Portfolio = ({ path }) => {
             </Swiper>
           </div>
           {/* 개인 스터디 프로젝트 */}
-          <div className="portfolio-box">
+          <div className="portfolio-box study">
             <h3>Study Project</h3>
             {/* Swiper 배치 */}
             <Swiper
@@ -338,60 +359,41 @@ const Portfolio = ({ path }) => {
                   rel="noopener noreferrer"
                   alt="portfolio"
                 >
-                  <img src={`${path}/images/stx.jpg`} alt="portfolio" />
+                  <img src={`${path}/images/study1.jpg`} alt="portfolio" />
                 </a>
               </SwiperSlide>
               <SwiperSlide>
                 <a
-                  href="#"
+                  href="https://goldjade.github.io/stx/"
                   target="_blank"
                   rel="noopener noreferrer"
                   alt="portfolio"
                 >
-                  <img src={`${path}/images/sample.png`} alt="portfolio" />
+                  <img src={`${path}/images/study2.jpg`} alt="portfolio" />
                 </a>
               </SwiperSlide>
               <SwiperSlide>
                 <a
-                  href="#"
+                  href="https://goldjade.github.io/stx/"
                   target="_blank"
                   rel="noopener noreferrer"
                   alt="portfolio"
                 >
-                  <img src={`${path}/images/sample.png`} alt="portfolio" />
-                </a>
-              </SwiperSlide>
-              <SwiperSlide>
-                <a
-                  href="#"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  alt="portfolio"
-                >
-                  <img src={`${path}/images/sample.png`} alt="portfolio" />
-                </a>
-              </SwiperSlide>
-              <SwiperSlide>
-                <a
-                  href="#"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  alt="portfolio"
-                >
-                  <img src={`${path}/images/sample.png`} alt="portfolio" />
-                </a>
-              </SwiperSlide>
-              <SwiperSlide>
-                <a
-                  href="#"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  alt="portfolio"
-                >
-                  <img src={`${path}/images/sample.png`} alt="portfolio" />
+                  <img src={`${path}/images/study3.jpg`} alt="portfolio" />
                 </a>
               </SwiperSlide>
             </Swiper>
+          </div>
+          <div className="portfolio-box ect">
+            <h3>ECT</h3>
+            <div className="ect-list">
+              <img src={`${path}/images/ect4.jpg`} alt="portfolio" />
+              <img src={`${path}/images/ect5.jpg`} alt="portfolio" />
+              <img src={`${path}/images/ect6.jpg`} alt="portfolio" />
+              <img src={`${path}/images/ect3.jpg`} alt="portfolio" />
+              <img src={`${path}/images/ect2.jpg`} alt="portfolio" />
+              <img src={`${path}/images/ect0.jpg`} alt="portfolio" />
+            </div>
           </div>
         </div>
       </div>

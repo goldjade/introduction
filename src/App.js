@@ -90,7 +90,7 @@ const App = () => {
         <Skills path={path} />
         <Portfolio path={path} />
         <Life path={path} />
-        <Vision path={path} />
+        {/* <Vision path={path} /> */}
       </div>
       <Footer />
     </div>

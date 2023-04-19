@@ -1,12 +1,11 @@
-/** @format */
-
-import React from "react";
+import React, { useEffect, useRef } from "react";
 
 // import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 
 const Skills = ({ path }) => {
+
   return (
     <section className="skills scroll">
       <div className="inner">
@@ -21,7 +20,7 @@ const Skills = ({ path }) => {
           data-aos-delay="800"
         >
           <ul className="skills-list">
-            <li data-aos="fade-up" data-aos-duration="500" data-aos-delay="500">
+            <li>
               <img
                 className="html"
                 src={`${path}/images/skill/skill-html.svg`}
@@ -37,7 +36,7 @@ const Skills = ({ path }) => {
                 </div>
               </div>
             </li>
-            <li data-aos="fade-up" data-aos-duration="500" data-aos-delay="500">
+            <li>
               <img
                 className="css"
                 src={`${path}/images/skill/skill-css.svg`}
@@ -51,7 +50,7 @@ const Skills = ({ path }) => {
                 </div>
               </div>
             </li>
-            <li data-aos="fade-up" data-aos-duration="500" data-aos-delay="500">
+            <li>
               <img
                 className="js"
                 src={`${path}/images/skill/skill-js.svg`}
@@ -65,7 +64,7 @@ const Skills = ({ path }) => {
                 </div>
               </div>
             </li>
-            <li data-aos="fade-up" data-aos-duration="500" data-aos-delay="500">
+            <li>
               <img
                 className="react"
                 src={`${path}/images/skill/skill-react.svg`}
@@ -83,7 +82,7 @@ const Skills = ({ path }) => {
               </div>
             </li>
 
-            <li data-aos="fade-up" data-aos-duration="500" data-aos-delay="500">
+            <li>
               <img src={`${path}/images/skill/skill-ps.svg`} alt="skill" />
               <div className="s-r">
                 <span className="skill-name">Photoshp</span>
@@ -94,7 +93,7 @@ const Skills = ({ path }) => {
               </div>
             </li>
 
-            <li data-aos="fade-up" data-aos-duration="500" data-aos-delay="500">
+            <li>
               <img src={`${path}/images/skill/skill-ai.svg`} alt="skill" />
               <div className="s-r">
                 <span className="skill-name">Illustrator</span>
@@ -105,7 +104,7 @@ const Skills = ({ path }) => {
               </div>
             </li>
 
-            <li data-aos="fade-up" data-aos-duration="500" data-aos-delay="500">
+            <li>
               <img src={`${path}/images/skill/skill-figma.svg`} alt="skill" />
               <div className="s-r">
                 <span className="skill-name">Pigma</span>
@@ -116,7 +115,7 @@ const Skills = ({ path }) => {
               </div>
             </li>
 
-            <li data-aos="fade-up" data-aos-duration="500" data-aos-delay="500">
+            <li>
               <img
                 src={`${path}/images/skill/skill-tailwindcss.svg`}
                 alt="skill"
@@ -130,7 +129,7 @@ const Skills = ({ path }) => {
               </div>
             </li>
 
-            <li data-aos="fade-up" data-aos-duration="500" data-aos-delay="500">
+            <li>
               <img src={`${path}/images/skill/skill-sass.svg`} alt="skill" />
               <div className="s-r">
                 <spa className="skill-name" n>
@@ -142,7 +141,7 @@ const Skills = ({ path }) => {
                 </div>
               </div>
             </li>
-            <li data-aos="fade-up" data-aos-duration="500" data-aos-delay="500">
+            <li>
               <img
                 src={`${path}/images/skill/skill-StyledComponents.svg`}
                 alt="skill"
@@ -158,7 +157,7 @@ const Skills = ({ path }) => {
               </div>
             </li>
 
-            <li data-aos="fade-up" data-aos-duration="500" data-aos-delay="500">
+            <li>
               <img src={`${path}/images/skill/skill-git.svg`} alt="skill" />
               <div className="s-r">
                 <span className="skill-name">GitHub</span>
@@ -169,7 +168,7 @@ const Skills = ({ path }) => {
               </div>
             </li>
 
-            <li data-aos="fade-up" data-aos-duration="500" data-aos-delay="500">
+            <li>
               <img src={`${path}/images/skill/skill-jquery.svg`} alt="skill" />
               <div className="s-r">
                 <span className="skill-name">jQuery</span>
@@ -180,7 +179,7 @@ const Skills = ({ path }) => {
               </div>
             </li>
 
-            <li data-aos="fade-up" data-aos-duration="500" data-aos-delay="500">
+            <li>
               <img src={`${path}/images/skill/skill-type.svg`} alt="skill" />
               <div className="s-r">
                 <span className="skill-name">typescript</span>
@@ -191,7 +190,7 @@ const Skills = ({ path }) => {
               </div>
             </li>
 
-            <li data-aos="fade-up" data-aos-duration="500" data-aos-delay="500">
+            <li>
               <img src={`${path}/images/skill/skill-redux.svg`} alt="skill" />
               <div className="s-r">
                 <span className="skill-name">Redux</span>
@@ -202,7 +201,7 @@ const Skills = ({ path }) => {
               </div>
             </li>
 
-            <li data-aos="fade-up" data-aos-duration="500" data-aos-delay="500">
+            <li>
               <img src={`${path}/images/skill/skill-postman.svg`} alt="skill" />
               <div className="s-r">
                 <span className="skill-name">Postman</span>

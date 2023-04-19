@@ -6,14 +6,6 @@ import { MdEmail } from "react-icons/md";
 import { AiFillMessage, AiFillStar } from "react-icons/ai";
 import { IoMail } from "react-icons/io5";
 const Profile = ({ path }) => {
-  const tooltipRef = useRef(null);
-
-  const handleMouseMove = (event) => {
-    const tooltip = tooltipRef.current;
-    tooltip.style.top = event.clientY - 480 + "px"; // 마우스 Y 좌표에 10px 추가
-    tooltip.style.right = -35 + "px"; // 마우스 X 좌표에서 20px 뺌
-  };
-
   return (
     <section className="profile scroll">
       <div className="inner">
@@ -80,11 +72,7 @@ const Profile = ({ path }) => {
             <BsGithub className="c-icon github" />
             <span className="tooltip">GitHub</span>
           </a>
-          <a
-            href={`${path}/최금옥_이력서.pdf`}
-            download
-            onMouseMove={handleMouseMove}
-          >
+          <a href={`${path}/최금옥_이력서.pdf`} download>
             <HiDocumentDownload className="c-icon" />
             <span className="tooltip cv">이력서</span>
           </a>
