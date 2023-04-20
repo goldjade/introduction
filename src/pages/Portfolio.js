@@ -364,6 +364,16 @@ const Portfolio = ({ path }) => {
                   <img src={`${path}/images/study3.jpg`} alt="portfolio" />
                 </a>
               </SwiperSlide>
+              <SwiperSlide>
+                <a
+                  href="https://github.com/goldjade/wonderplace-clone"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  alt="portfolio"
+                >
+                  <img src={`${path}/images/study4.jpg`} alt="portfolio" />
+                </a>
+              </SwiperSlide>
             </Swiper>
           </div>
           <div className="portfolio-box ect">
