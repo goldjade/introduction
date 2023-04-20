@@ -41,7 +41,7 @@ const Portfolio = ({ path }) => {
                   className="portfolio-team burgerwang"
                   data-aos="fade-up"
                   data-aos-duration="1000"
-                  data-aos-delay="700"
+                  data-aos-delay="800"
                 >
                   <div className="portfolio-v">
                     <video controls loop muted autoPlay>
@@ -327,9 +327,19 @@ const Portfolio = ({ path }) => {
           </div>
           {/* 개인 스터디 프로젝트 */}
           <div className="portfolio-box study">
-            <h3>Study Project</h3>
+            <h3
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              data-aos-delay="700"
+            >
+              Study Project
+            </h3>
             {/* Swiper 배치 */}
+
             <Swiper
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              data-aos-delay="800"
               loop={true}
               slidesPerView={1}
               spaceBetween={0}
@@ -361,6 +371,7 @@ const Portfolio = ({ path }) => {
                 >
                   <img src={`${path}/images/study1.jpg`} alt="portfolio" />
                 </a>
+              
               </SwiperSlide>
               <SwiperSlide>
                 <a
@@ -385,14 +396,55 @@ const Portfolio = ({ path }) => {
             </Swiper>
           </div>
           <div className="portfolio-box ect">
-            <h3>ECT</h3>
-            <div className="ect-list">
-              <img src={`${path}/images/ect4.jpg`} alt="portfolio" />
-              <img src={`${path}/images/ect5.jpg`} alt="portfolio" />
-              <img src={`${path}/images/ect6.jpg`} alt="portfolio" />
-              <img src={`${path}/images/ect3.jpg`} alt="portfolio" />
-              <img src={`${path}/images/ect2.jpg`} alt="portfolio" />
-              <img src={`${path}/images/ect0.jpg`} alt="portfolio" />
+            <h3
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              data-aos-delay="700"
+            >
+              ECT
+            </h3>
+            <div
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              data-aos-delay="800"
+              className="ect-list"
+            >
+              <div className="ect-list-img">
+                <img src={`${path}/images/ect4.jpg`} alt="portfolio" />
+                <p className="neyong">
+                  <span>#패키지 디자인 #배너이미지</span>
+                </p>
+              </div>
+              <div className="ect-list-img">
+                <img src={`${path}/images/ect5.jpg`} alt="portfolio" />
+                <p className="neyong">
+                <span>#패키지 디자인 #배너이미지</span>
+                </p>
+              </div>
+              <div className="ect-list-img">
+                <img src={`${path}/images/ect6.jpg`} alt="portfolio" />
+                <p className="neyong">
+                <span>#배너이미지</span>
+                </p>
+              </div>
+              <div className="ect-list-img">
+                <img src={`${path}/images/ect3.jpg`} alt="portfolio" />
+                <p className="neyong">
+                  <span>#캐리커처</span>
+                </p>
+              </div>
+              <div className="ect-list-img">
+                <img src={`${path}/images/ect2.jpg`} alt="portfolio" />
+                <p className="neyong">
+                  <span>#일상 #일러스트</span>
+                </p>
+              </div>
+              <div className="ect-list-img">
+                <img src={`${path}/images/ect0.jpg`} alt="portfolio" />
+                <p className="neyong">
+                  <span>#컷툰</span>
+                </p>
+              </div>
             </div>
           </div>
         </div>
