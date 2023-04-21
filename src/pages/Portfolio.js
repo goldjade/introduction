@@ -374,6 +374,16 @@ const Portfolio = ({ path }) => {
                   <img src={`${path}/images/study4.jpg`} alt="portfolio" />
                 </a>
               </SwiperSlide>
+              <SwiperSlide>
+                <a
+                  href="https://next-pl-self.vercel.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  alt="portfolio"
+                >
+                  <img src={`${path}/images/study5.jpg`} alt="portfolio" />
+                </a>
+              </SwiperSlide>
             </Swiper>
           </div>
           <div className="portfolio-box ect">

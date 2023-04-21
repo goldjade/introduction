@@ -140,7 +140,11 @@
   .swiper-pagination,
   .swiper-pagination-bullets,
   .swiper-pagination-horizontal {
-    display: none;
+
+  }
+
+    .swiper-pagination-bullet-active {
+    background: #222;
   }
 }
 // 데스크탑
