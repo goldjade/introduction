@@ -23,6 +23,13 @@
     .contents {
       .portfolio-box {
         margin-bottom: 100px;
+        .portfolio-slide {
+          img,
+          video {
+            border-radius: 5px;
+            width: 100%;
+          }
+        }
         .portfolio-team {
           display: flex;
           flex-direction: column;
@@ -38,8 +45,7 @@
               width: 100%;
             }
           }
-
-          .portfolio-right {
+          .portfolio-bottom {
             width: 60%;
             .portfilio-team-list {
               .title {
@@ -64,12 +70,84 @@
             }
           }
         }
-        .portfolio-slide {
-          a {
-            img {
-              border-radius: 5px;
-              width: 100%;
+        .portfolio-study {
+          display: flex;
+          border-radius: 5px;
+          overflow: hidden;
+          position: relative;
+          > img {
+            width: 100%;
+          }
+          .study-neyoun {
+            position: absolute;
+            left: 0px;
+            top: 0px;
+            padding: 20px;
+            width: 100%;
+            height: 100%;
+            color: #fff;
+            visibility: hidden;
+            background: rgba(0, 0, 0, 0.7);
+            opacity: 0;
+
+            .s-title {
+              font-size: 30px;
+              font-weight: 400;
             }
+            .s-text {
+              margin: 10px 0;
+              font-weight: 300;
+            }
+            .s-tool-img {
+              display: flex;
+              gap: 2%;
+              > img {
+                width: 30px;
+              }
+            }
+            .s-bt {
+              position: absolute;
+              bottom: 20px;
+              left: 50%;
+              transform: translate(-50%);
+              display: flex;
+              justify-content: center;
+              gap: 2%;
+              > a {
+                > span {
+                  display: block;
+                  white-space: nowrap;
+                  font-size: 14px;
+                  line-height: 14px;
+                  color: #222;
+                  background: #fff;
+                  border-radius: 5px;
+                  padding: 5px 20px;
+                  &:hover {
+                    color: #a08e82;
+                  }
+                }
+              }
+            }
+          }
+        }
+        .portfolio-study:hover {
+          .study-neyoun {
+            visibility: visible;
+            opacity: 1;
+            transition: opacity 0.5s;
+          }
+        }
+
+        .portfolio-study {
+          position: relative;
+          .study-neyong {
+            position: absolute;
+            top: 10px;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.7);
           }
         }
         .ect-list {
@@ -137,16 +215,12 @@
     border-radius: 50%;
     background: rgba(2, 2, 2, 0.3);
   }
-  .swiper-pagination,
-  .swiper-pagination-bullets,
-  .swiper-pagination-horizontal {
 
-  }
-
-    .swiper-pagination-bullet-active {
-    background: #222;
+  .swiper-pagination-bullet-active {
+    background: #a08e82;
   }
 }
+
 // 데스크탑
 @media screen and (max-width: $desktop) {
 }
@@ -155,8 +229,4 @@
 }
 // 모바일
 @media screen and (max-width: $mp) {
-  .portfolio-left,
-  .portfolio-right {
-    width: 100% !important;
-  }
 }

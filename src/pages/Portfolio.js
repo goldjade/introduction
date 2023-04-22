@@ -48,7 +48,7 @@ const Portfolio = ({ path }) => {
                       <source src={`${path}/images/burgerwang.mp4`} />
                     </video>
                   </div>
-                  <div className="portfolio-right">
+                  <div className="portfolio-bottom">
                     <ul className="portfilio-team-list">
                       <li className="title">버거왕</li>
                       <li className="period">
@@ -123,13 +123,18 @@ const Portfolio = ({ path }) => {
                 </div>
               </SwiperSlide>
               <SwiperSlide>
-                <div className="portfolio-team dietdiary">
+                <div
+                  className="portfolio-team dietdiary"
+                  data-aos="fade-up"
+                  data-aos-duration="1000"
+                  data-aos-delay="800"
+                >
                   <div className="portfolio-v">
                     <video controls loop muted autoPlay>
                       <source src={`${path}/images/diet.mp4`} />
                     </video>
                   </div>
-                  <div className="portfolio-right">
+                  <div className="portfolio-bottom">
                     <ul className="portfilio-team-list">
                       <li className="title">나의 식단일지</li>
                       <li className="period">
@@ -207,13 +212,18 @@ const Portfolio = ({ path }) => {
                 </div>
               </SwiperSlide>
               <SwiperSlide>
-                <div className="portfolio-team MathEdu">
+                <div
+                  className="portfolio-team MathEdu"
+                  data-aos="fade-up"
+                  data-aos-duration="1000"
+                  data-aos-delay="800"
+                >
                   <div className="portfolio-v">
                     <video controls loop muted autoPlay>
                       <source src={`${path}/images/methedu-team-min.mp4`} />
                     </video>
                   </div>
-                  <div className="portfolio-right">
+                  <div className="portfolio-bottom">
                     <ul className="portfilio-team-list">
                       <li className="title">MathEdu LMS</li>
                       <li className="period">
@@ -306,7 +316,6 @@ const Portfolio = ({ path }) => {
             >
               Study Project
             </h3>
-            {/* Swiper 배치 */}
 
             <Swiper
               data-aos="fade-up"
@@ -335,57 +344,312 @@ const Portfolio = ({ path }) => {
               className="portfolio-slide"
             >
               <SwiperSlide>
-                <a
-                  href="https://goldjade.github.io/stx/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  alt="portfolio"
-                >
+                <div className="portfolio-study">
                   <img src={`${path}/images/study1.jpg`} alt="portfolio" />
-                </a>
+                  <div className="study-neyoun">
+                    <span className="s-title">STX건설</span>
+                    <p className="s-text">스터디 클론코딩입니다.</p>
+                    <div className="s-tool-img">
+                      <img
+                        src={`${path}/images/skill/skill-html.svg`}
+                        alt="React"
+                      />
+                      <img
+                        src={`${path}/images/skill/skill-css.svg`}
+                        alt="Redux"
+                      />
+                    </div>
+                    <div className="s-bt">
+                      <a
+                        href="https://github.com/goldjade/stx"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        alt="portfolio"
+                      >
+                        <span>GitHub</span>
+                      </a>
+                      <a
+                        href="https://goldjade.github.io/stx/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        alt="portfolio"
+                      >
+                        <span>Work</span>
+                      </a>
+                      <a
+                        href="http://www.stxconst.co.kr/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        alt="portfolio"
+                      >
+                        <span>Origin</span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
               </SwiperSlide>
               <SwiperSlide>
-                <a
-                  href="https://goldjade.github.io/hansalim/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  alt="portfolio"
-                >
+                <div className="portfolio-study">
                   <img src={`${path}/images/study2.jpg`} alt="portfolio" />
-                </a>
+                  <div className="study-neyoun">
+                    <span className="s-title">한살림 장보기</span>
+                    <p className="s-text">스터디 클론코딩입니다.</p>
+                    <div className="s-tool-img">
+                      <img
+                        src={`${path}/images/skill/skill-html.svg`}
+                        alt="React"
+                      />
+                      <img
+                        src={`${path}/images/skill/skill-css.svg`}
+                        alt="Redux"
+                      />
+                      <img
+                        src={`${path}/images/skill/skill-js.svg`}
+                        alt="Redux"
+                      />
+                    </div>
+                    <div className="s-bt">
+                      <a
+                        href="https://goldjade.github.io/hansalim/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        alt="portfolio"
+                      >
+                        <span>GitHub</span>
+                      </a>
+                      <a
+                        href="https://goldjade.github.io/hansalim/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        alt="portfolio"
+                      >
+                        <span>Work</span>
+                      </a>
+                      <a
+                        href="https://shop.hansalim.or.kr/shopping/spMain.do"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        alt="portfolio"
+                      >
+                        <span>Origin</span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
               </SwiperSlide>
               <SwiperSlide>
-                <a
-                  href="https://goldjade.github.io/hyundai-clone"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  alt="portfolio"
-                >
+                <div className="portfolio-study">
                   <img src={`${path}/images/study3.jpg`} alt="portfolio" />
-                </a>
+                  <div className="study-neyoun">
+                    <span className="s-title">현대그룹</span>
+                    <p className="s-text">스터디 클론코딩입니다.</p>
+                    <div className="s-tool-img">
+                      <img
+                        src={`${path}/images/skill/skill-html.svg`}
+                        alt="React"
+                      />
+                      <img
+                        src={`${path}/images/skill/skill-css.svg`}
+                        alt="Redux"
+                      />
+                      <img
+                        src={`${path}/images/skill/skill-js.svg`}
+                        alt="Redux"
+                      />
+                    </div>
+                    <div className="s-bt">
+                      <a
+                        href="https://github.com/goldjade/hyundai-clone"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        alt="portfolio"
+                      >
+                        <span>GitHub</span>
+                      </a>
+                      <a
+                        href="https://goldjade.github.io/hyundai-clone/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        alt="portfolio"
+                      >
+                        <span>Work</span>
+                      </a>
+                      <a
+                        href="https://www.hyundaigroup.com/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        alt="portfolio"
+                      >
+                        <span>Origin</span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
               </SwiperSlide>
               <SwiperSlide>
-                <a
-                  href="https://github.com/goldjade/wonderplace-clone"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  alt="portfolio"
-                >
+                <div className="portfolio-study">
                   <img src={`${path}/images/study4.jpg`} alt="portfolio" />
-                </a>
+                  <div className="study-neyoun">
+                    <span className="s-title">원더플레이스</span>
+                    <p className="s-text">스터디 클론코딩입니다.</p>
+                    <div className="s-tool-img">
+                      <img
+                        src={`${path}/images/skill/skill-html.svg`}
+                        alt="React"
+                      />
+                      <img
+                        src={`${path}/images/skill/skill-css.svg`}
+                        alt="Redux"
+                      />
+                      <img
+                        src={`${path}/images/skill/skill-js.svg`}
+                        alt="Redux"
+                      />
+                    </div>
+                    <div className="s-bt">
+                      <a
+                        href="https://github.com/goldjade/wonderplace-clone"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        alt="portfolio"
+                      >
+                        <span>GitHub</span>
+                      </a>
+                      <a
+                        href="https://goldjade.github.io/wonderplace-clone/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        alt="portfolio"
+                      >
+                        <span>Work</span>
+                      </a>
+                      <a
+                        href="https://www.wonderplace.com/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        alt="portfolio"
+                      >
+                        <span>Origin</span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
               </SwiperSlide>
               <SwiperSlide>
-                <a
-                  href="https://next-pl-self.vercel.app/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  alt="portfolio"
-                >
+                <div className="portfolio-study">
                   <img src={`${path}/images/study5.jpg`} alt="portfolio" />
-                </a>
+                  <div className="study-neyoun">
+                    <span className="s-title">Profile</span>
+                    <p className="s-text">
+                      postman을 활용하여 notionDB를 사용한 NextJS로 제작한
+                      프로필사이트 입니다.
+                    </p>
+                    <div className="s-tool-img">
+                      <img
+                        src={`${path}/images/skill/skill-NextJS-Dark.svg`}
+                        alt="NextJS"
+                      />
+                      <img
+                        src={`${path}/images/skill/skill-tailwindcss.svg`}
+                        alt="tailwindcss"
+                      />
+                      <img
+                        src={`${path}/images/skill/skill-postman.svg`}
+                        alt="tailwindcss"
+                      />
+                    </div>
+                    <div className="s-bt">
+                      <a
+                        href="https://github.com/goldjade/todo_mongo_server"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        alt="portfolio"
+                      >
+                        <span>Server GitHub</span>
+                      </a>
+                      <a
+                        href="https://github.com/goldjade/todo_mongo_client"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        alt="portfolio"
+                      >
+                        <span>Client GitHub</span>
+                      </a>
+                      <a
+                        href="https://next-pl-self.vercel.app/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        alt="portfolio"
+                      >
+                        <span>Work</span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </SwiperSlide>
+              <SwiperSlide>
+                <div className="portfolio-study">
+                  <img src={`${path}/images/study6.jpg`} alt="portfolio" />
+                  <div className="study-neyoun">
+                    <span className="s-title">TODO</span>
+                    <p className="s-text">
+                      Firebase와 mongodb를 활용하여 이메일을 통한 회원가입과
+                      데이터베이스를 구축하였습니다.
+                    </p>
+                    <div className="s-tool-img">
+                      <img
+                        src={`${path}/images/skill/skill-React.svg`}
+                        alt="React"
+                      />
+                      <img
+                        src={`${path}/images/skill/skill-Redux.svg`}
+                        alt="Redux"
+                      />
+                      <img
+                        src={`${path}/images/skill/skill-Bootstrap.svg`}
+                        alt="Bootstrap"
+                      />
+                      <img
+                        src={`${path}/images/skill/skill-mongoDB.svg`}
+                        alt="mongoDB"
+                      />
+                      <img
+                        src={`${path}/images/skill/skill-firebase.svg`}
+                        alt="firebase"
+                      />
+                    </div>
+                    <div className="s-bt">
+                      <a
+                        href="https://github.com/goldjade/todo_mongo_server"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        alt="portfolio"
+                      >
+                        <span>Server GitHub</span>
+                      </a>
+                      <a
+                        href="https://github.com/goldjade/todo_mongo_client"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        alt="portfolio"
+                      >
+                        <span>Client GitHub</span>
+                      </a>
+                      <a
+                        href="https://port-0-todo-mongo-server-19k5ygi525lctz1ka8.gksl2.cloudtype.app/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        alt="portfolio"
+                      >
+                        <span>Work</span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
               </SwiperSlide>
             </Swiper>
           </div>
+          {/* 기타 */}
           <div className="portfolio-box ect">
             <h3
               data-aos="fade-up"
