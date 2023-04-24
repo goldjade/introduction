@@ -102,7 +102,7 @@ const Portfolio = ({ path }) => {
                           <img
                             className="p-img"
                             src={`${path}/images/skill/skill-git.svg`}
-                            alt="html"
+                            alt="git"
                           />
                         </a>
                         <a
@@ -114,7 +114,7 @@ const Portfolio = ({ path }) => {
                           <img
                             className="p-img"
                             src={`${path}/images/skill/skill-figma.svg`}
-                            alt="html"
+                            alt="figma"
                           />
                         </a>
                       </div>
@@ -156,27 +156,27 @@ const Portfolio = ({ path }) => {
                         <img
                           className="p-img"
                           src={`${path}/images/skill/skill-css.svg`}
-                          alt="html"
+                          alt="css"
                         />
                         <img
                           className="p-img"
                           src={`${path}/images/skill/skill-tailwindcss.svg`}
-                          alt="html"
+                          alt="tailwindcss"
                         />
                         <img
                           className="p-img"
                           src={`${path}/images/skill/skill-js.svg`}
-                          alt="html"
+                          alt="js"
                         />
                         <img
                           className="p-img"
                           src={`${path}/images/skill/skill-react.svg`}
-                          alt="html"
+                          alt="react"
                         />
                         <img
                           className="p-img"
                           src={`${path}/images/skill/skill-redux.svg`}
-                          alt="html"
+                          alt="redux"
                         />
                       </div>
                       <li className="sub-title"> 프로젝트 보러가기 </li>
@@ -191,7 +191,7 @@ const Portfolio = ({ path }) => {
                           <img
                             className="p-img"
                             src={`${path}/images/skill/skill-git.svg`}
-                            alt="html"
+                            alt="git"
                           />
                         </a>
                         <a
@@ -203,7 +203,7 @@ const Portfolio = ({ path }) => {
                           <img
                             className="p-img"
                             src={`${path}/images/skill/skill-figma.svg`}
-                            alt="html"
+                            alt="figma"
                           />
                         </a>
                       </div>
@@ -260,7 +260,7 @@ const Portfolio = ({ path }) => {
                         <img
                           className="p-img"
                           src={`${path}/images/skill/skill-react.svg`}
-                          alt="html"
+                          alt="react"
                         />
                         <img
                           className="p-img"
@@ -352,7 +352,7 @@ const Portfolio = ({ path }) => {
                     <div className="s-tool-img">
                       <img
                         src={`${path}/images/skill/skill-html.svg`}
-                        alt="React"
+                        alt="html"
                       />
                       <img
                         src={`${path}/images/skill/skill-css.svg`}
@@ -541,8 +541,7 @@ const Portfolio = ({ path }) => {
                   <div className="study-neyoun">
                     <span className="s-title">Profile</span>
                     <p className="s-text">
-                      postman을 활용하여 notionDB를 사용한 NextJS로 제작한
-                      프로필사이트 입니다.
+                      next.js 스터디 용으로 notionDB를 사용하여 작업했습니다.
                     </p>
                     <div className="s-tool-img">
                       <img
@@ -554,7 +553,7 @@ const Portfolio = ({ path }) => {
                         alt="tailwindcss"
                       />
                       <img
-                        src={`${path}/images/skill/skill-postman.svg`}
+                        src={`${path}/images/skill/skill-Postman.svg`}
                         alt="tailwindcss"
                       />
                     </div>
@@ -598,11 +597,12 @@ const Portfolio = ({ path }) => {
                     </p>
                     <div className="s-tool-img">
                       <img
-                        src={`${path}/images/skill/skill-React.svg`}
+                        src={`${path}/images/skill/skill-react.svg`}
                         alt="React"
                       />
+
                       <img
-                        src={`${path}/images/skill/skill-Redux.svg`}
+                        src={`${path}/images/skill/skill-redux.svg`}
                         alt="Redux"
                       />
                       <img

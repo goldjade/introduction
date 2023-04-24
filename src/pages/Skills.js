@@ -5,7 +5,6 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 
 const Skills = ({ path }) => {
-
   return (
     <section className="skills scroll">
       <div className="inner">
@@ -202,7 +201,7 @@ const Skills = ({ path }) => {
             </li>
 
             <li>
-              <img src={`${path}/images/skill/skill-postman.svg`} alt="skill" />
+              <img src={`${path}/images/skill/skill-Postman.svg`} alt="skill" />
               <div className="s-r">
                 <span className="skill-name">Postman</span>
                 <span>API test 가능</span>
